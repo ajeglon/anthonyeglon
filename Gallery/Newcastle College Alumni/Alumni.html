@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Alumni Exhibition Gallery</title>
+</head>
+
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+      <div>
+        <nav class="navmob" role="banner">
+            <div class="dropdown">
+              <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="mobnavlist" id="myDropdown">
+                <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                <li><a href="../../About/About.html">About</a></li>
+                <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+            </div>
+          </div>
+          <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+        </div>
+        </nav>
+        <div>
+          <nav class="nav" role="banner">
+            <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+              <div class="navlist">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+          </nav>
+      </div>
+      </header>
+<!--Title-->
+<div>
+    <h1 class="PageTitle" role="heading">Gallery - Newcastle College Alumni Show</h1>
+</div>
+<!--Images-->
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+        <img class="galleryimagep" role="img" alt="A rubbery hammer and silicon gun, both floppy to look phalic" src="../Newcastle College Alumni/Images/Deadbow and Silicon.JPG">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+        <img class="galleryimagep" role="img" alt="A set of rubbery smoking pipes, floppy to resmble sperm" src="../Newcastle College Alumni/Images/Pipe Side.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+        <img class="galleryimagep" role="img" alt="A closeup of one of the rubbery smoking pipes" src="../Newcastle College Alumni/Images/Pipe.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+        <img class="galleryimagep" role="img" alt="A closeup of one of the rubbery smoking pipes" src="../Newcastle College Alumni/Images/Silicon Side.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+        <img class="galleryimagep" role="img" alt="A closeup of one of the silcone gun" src="../Newcastle College Alumni/Images/Silicon.jpg">
+    </div>
+ 
+  
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../Newcastle College Alumni/Images/Deadbow and Silicon.JPG" style="width:100%" onclick="currentSlide(1)" alt="'Deadblow' and Untitled - Silicon cast objects">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Newcastle College Alumni/Images/Pipe Side.jpg" style="width:100%" onclick="currentSlide(2)" alt="Untitled - Silicon cast object">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Newcastle College Alumni/Images/Pipe.jpg" style="width:100%" onclick="currentSlide(3)" alt="Untitled - Silicon cast object">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Newcastle College Alumni/Images/Silicon Side.jpg" style="width:100%" onclick="currentSlide(4)" alt="Untitled - Silicon cast object">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Newcastle College Alumni/Images/Silicon.jpg" style="width:100%" onclick="currentSlide(5)" alt="Untitled - Silicon cast object">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    <!--Footer/Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>

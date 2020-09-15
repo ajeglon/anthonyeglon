@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Falling Apart</title>
+</head>
+
+<body>
+<!--Header-->
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob" role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+<!--Exhibiton Title + Date-->
+<div>
+    <h2 class="exhtitle" role="heading">Falling Apart (August 2014)</h2>
+</div>
+<!--Exhibition Images-->
+<div>
+    <img class="exhposter" src="./Falling Apart Poster.jpg" alt="Poster with geometric shapes displaying information for exhibition" role="img" width="50%" height="50%">
+</div>
+<div>
+    <p class="exhgallery"><a href="../../Gallery/Falling Apart/FallingApartGallery.html">Exhibition Gallery</a></p>
+</div>
+
+<!--About Exhibition--> 
+<div>
+    <p class="exhtext">Falling Apart was an exhibition set up by myself and fellow peers from Newcastle College to celebrate our practices before we all parted to different universities, hence the title of the exhibition. The exhibition was hosted at Stephenson’s Boiler Shop, Newcastle, which featured an array of work due to displaying works of 20+ budding artists. The work I created myself for this exhibition was a series of wire sculptures animals whose forms loosened as the sculpture progressed downwards to take the literal theme of Falling Apart. This exhibition was a highlight of my artistic practice as I was part of the core group in organising and curating. The final result of being able to produce an exhibition that could celebrate my peers and I journey whilst giving a springboard onto all of our next ventures was very special to me. </p>
+    <p class="exhtext">A selection of new and young artists are about to embark on new and exciting journeys all around the country; to celebrate their time spent studying, the group will be offering a final opportunity for the public to see their work in a pop up exhibition. An eclectic range of work will be hung, in mediums including sculpture, painting, photography and installation all exploring the theme of 'falling apart'.</p>
+</div>
+<!--Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>

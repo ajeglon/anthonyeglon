@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Falling Together Gallery</title>
+</head>
+
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+      <div>
+        <nav class="navmob" role="banner">
+            <div class="dropdown">
+              <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="mobnavlist" id="myDropdown">
+                <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                <li><a href="../../About/About.html">About</a></li>
+                <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+            </div>
+          </div>
+          <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+        </div>
+        </nav>
+        <div>
+          <nav class="nav" role="banner">
+            <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+              <div class="navlist">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+          </nav>
+      </div>
+      </header>
+<!--Title-->
+<div>
+    <h1 class="PageTitle" role="heading">Gallery - Falling Together</h1>
+</div>
+<!--Images-->
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img class="galleryimagep" role="img" alt="Furry purple sculpture, human height with angular points" src="../Falling Together/Images/Purple Sculpture .jpg">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img class="galleryimagep" role="img" alt="Closeup of material used" src="../Falling Together/Images/Purple Sculpture Close Up.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img class="galleryimagep" role="img" src="../Falling Together/Images/Purple Sculpture Front.jpg">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img class="galleryimagep" role="img" src="../Falling Together/Images/Purple Sculpture Orange Mesh Close.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img class="galleryimagep" role="img" src="../Falling Together/Images/Purple Sculpture Sculpture Orange Mesh Far.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img class="galleryimagep" role="img" src="../Falling Together/Images/Purple Sculpture Side.jpg">
+    </div>
+  
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture .jpg" onclick="currentSlide(1)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture Close Up.jpg" onclick="currentSlide(2)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture Front.jpg" onclick="currentSlide(3)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture Orange Mesh Close.jpg" onclick="currentSlide(4)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture Sculpture Orange Mesh Far.jpg" onclick="currentSlide(5)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../Falling Together/Images/Purple Sculpture Side.jpg" onclick="currentSlide(6)" alt="'Francesco' - wood, stuffing and stitched purple plush fabric">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    <!--Footer/Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>

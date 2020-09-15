@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Exhibitions</title>
+</head>
+
+<body>
+<!--Header-->
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob" role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+<!--Exhibition List-->
+<h2 class="AboutHeading">Exhibitions</h2>
+<div class="Exhibitions" role="heading" role="presentation">
+    <ul class="Year"><b>2019</b></ul>
+        <li><a href="./Newcastle College Fine Art Alumni/CollegeAlumni.html">Newcastle College Alumni Exhibition</a>, <i>Assembly House, Newcastle-Upon-Tyne</i></li>
+    <ul class="Year"><b>2018</b></ul>
+        <li><a href="./Falling Together/FallingTogether.html">Falling Together</a>, <i>The Orange Room, Newbridge Project, Newcastle-Upon-Tyne</i></li>
+    <ul class="Year"><b>2017</b></ul>
+        <li><a href="./RWA 165/RWA.html">RWA 165</a>, <i>Sharples Gallery, RWA, Bristol</i></li>
+        <li><a href="./Reveal 2017/Reveal2017.html">Reveal 2017</a>, <i>Gallery North, Newcastle-Upon-Tyne</i></li>
+    <ul class="Year"><b>2016</b></ul>
+        <li><a href="./Carbon/Carbon.html">Carbon</a>, <i>Gallery North Project Space, Newcastle-Upon-Tyne</i></li>
+    <ul class="Year"><b>2014</b></ul>
+        <li><a href="./Falling Apart/FallingApart.html">Falling Apart</a>, <i>The Stephenson Works, Newcastle-Upon-Tyne</i></li>
+        <li><a href="./Final Show - Foundation Diploma in Art and Design/Final Show - Foundation Diploma in Art and Design.html">Final Show - Foundation Diploma in Art and Design</a>, <i>Newcastle College, Newcastle-Upon-Tyne</i></li>
+    <ul class="Year"><b>2013</b></ul>
+        <li><a href="./Open Studios/Open Studios.html">Open Studios</a>, <i>Square Yard Gallery, Newcastle-Upon-Tyne</i></li>
+</div>
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<!--C:\Users\owner\Documents\Projects\Anthony Eglon\Exhibitions\Exhibitions.html-->
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>

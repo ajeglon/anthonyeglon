@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Gallery</title>
+</head>
+
+<body>
+<!-- Main Content -->
+
+<div class="main-content">
+
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob" role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+
+<!--Gallery Tiles-->
+<div class="Gallery">
+        <div class="row">
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Newcastle College Alumni/Alumni.html"><img class="background" role="img" role="img" src="./Images/Deadbow and Silicon.jpg"><p class="gallerytitle">Newcastle College Alumni Show 2019</p></a>
+                </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Falling Together/FallingTogehterGallery.html"><img class="background" role="img" src="./Images/Purple Sculpture Side.jpg"><p class="gallerytitle">Falling Together </p></a>
+            </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./RWA/RWAGallery.html"><img class="background" role="img" src="./Images/RWA Side Profile.jpg"><p class="gallerytitle">RWA 165</p></a>
+            </div>
+            </div>
+        <br>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Sculpture Fellowship/SculptureFellowshipGallery.html"><img class="background" role="img" src="./Images/Jelly Standing.jpg"><p class="gallerytitle">Sculpture Fellowship</p></a>
+            </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Reveal/RevealGallery.html"><img class="background" role="img" src="./Images/Green Sculpture Full.jpg"><p class="gallerytitle">Reveal</p></a>
+            </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Textures/TexturesGallery.html"><img class="background" role="img" src="./Images/Wet Green.jpg"><p class="gallerytitle">Textures</p></a>
+            </div>
+            </div>
+        <br>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./University/UniversityGallery.html"><img class="background" role="img" src="./Images/Metal2.jpg"><p class="gallerytitle">University</p></a>
+            </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Falling Apart/FallingApartGallery.html"><img class="background" role="img" src="./Images/Oscar and Chico.jpg"><p class="gallerytitle">Falling Apart</p></a>
+            </div>
+            </div>
+            <div class="gallerycolumn">
+                <div class="gallerycontainer">
+                <a href="./Foundation Degree/Foundation Degree.html"><img class="background" role="img" src="./Images/CollegeExhibitionSide.jpg"><p class="gallerytitle">Foundation Degree</p></a>
+            </div>
+            </div>
+        </div>
+</div>
+
+<!--Footer/Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>

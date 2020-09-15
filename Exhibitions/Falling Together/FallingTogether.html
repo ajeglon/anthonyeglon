@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Falling Together</title>
+</head>
+
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob"role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+<!--Exhibiton Title + Date-->
+<div>
+    <h2 class="exhtitle" role="heading">Falling Together (May 2018)</h2>
+</div>
+<!--Exhibition Images-->
+<div class="row">
+    <div class="exhcolumn2">
+    <img src="./Falling Together Hands.jpg" alt="Poster with hands shaking displaying information for exhibition" role="img" width="100%">
+    </div>
+    <div class="exhcolumn2">
+    <img src="./Falling Together Jigsaw.jpg" alt="Poster with incomplete jigsaw displaying information for exhibition" role="img" width=100%>
+</div>
+<div>
+    <p class="exhgallery2"><a href="../../Gallery/Falling Together/FallingTogehterGallery.html">Exhibition Gallery</a></p>
+</div>
+<!--About Exhibition--> 
+<div>
+    <p>A spiritual successor to “Falling Apart” (2014) Falling Together served as a reunion between myself and my peers from my Foundation Degree at Newcastle College. The exhibition held in The Orange Room, The Newbridge Project featured returning artists from the previous exhibition and served as a celebration of our individual successes at university and to see how our artistic practices had developed whilst apart. The exhibition also progressed in having our years College Tutors; Andrew Holder and William Sparksman contributing work, allowing a lovely sentimental moment as students became collaborators to display growth of college kids to post-degree artists.</p>
+    <br>
+    <p>For this exhibition I progressed the theme of creating texturally pleasing sculpture by producing a free standing sculpture, structurally similar to does produced in Reveal, my degree show. This piece named “Francesco” was made of a hand stitched fabric “skin” which served as an improvement on the previous sculptures due to its longevity and reusability. The knowledge of exhibiting in The Orange Room led to the decision of producing a purple sculpture to contrast the space as much as possible. The sculpture itself was air filled meaning those who would break the gallery norm and interact with the sculpture would receive an unusual reaction as the sculpture would crinkle and sway to the touch. Due to structurally similarities to “Francesco’s” predecessor he was able to again act as the viewer in the space, as he would observe the works surrounding him whilst trying to communicate with the other gallery goers.</p>
+</div>
+
+<!--Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>

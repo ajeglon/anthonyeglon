@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Carbon</title>
+</head>
+
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob" role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+<!--Exhibiton Title + Date-->
+<div>
+    <h2 class="exhtitle" role="heading">Carbon (March 2016)</h2>
+</div>
+<!--Exhibition Poster-->
+<div>
+    <img class="exhposter" src="./Carbon Poster.jpg" role="img" alt="Blue and white poster displaying information for exhibition">
+</div>
+<!--About Exhibition--> 
+<div>
+    <p class="exhtext">Carbon was part of an experimental exhibition series named “TESTBED 16” produced by second year Fine Art students of Northumbria University. The exhibition “Carbon” was developed through several discussions about diverse ideas of Nature and as such each artwork presented spoke to some degree about an aspect of nature. Due to a nature themed exhibition I presented a sculpture I created whilst exploring and experimenting with textures which resembled a coral reef. Despite it’s appearance on closer look the “coral” is completely made up of fingers, presenting a combination of nature and man made. Unfortunately there are only limited photos from this exhibition and none include this piece so I have attached a general photo of the sculpture that was included.</p>
+</div>
+<br>
+<!--Exhibition Image-->
+<div>
+    <img class="exhposter" src="../../Gallery/University/Images/Coral Sculpture full.jpg" alt="Orange and yellow plaster sculpture that resembles coral" width="50%" height="50%" >
+</div>
+<!--Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../../CSS/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Anthony Eglon | Final Show - Foundation Diploma in Art and Design</title>
+</head>
+
+<body>
+<!-- Main Content -->
+<div class="main-content">
+    <!--Header-->
+    <header>
+        <div>
+          <nav class="navmob" role="banner">
+              <div class="dropdown">
+                <button class="dropbtn" role="button" onclick="myFunction()">Menu
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="mobnavlist" id="myDropdown">
+                  <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                  <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                  <li><a href="../../About/About.html">About</a></li>
+                  <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+              </div>
+            </div>
+            <a href="../../index.html" class="desktop logo" id="desktopmob">Anthony Eglon</a>
+          </div>
+          </nav>
+          <div>
+            <nav class="nav" role="banner">
+              <a href="../../index.html" class="desktop logo" id="desktop">Anthony Eglon</a>
+                <div class="navlist">
+                    <li><a href="../../Gallery/Gallery.html">Gallery</a></li>
+                    <li><a href="../../Exhibitions/Exhibitions.html">Exhibitions</a></li>
+                    <li><a href="../../About/About.html">About</a></li>
+                    <li><a href="https://www.instagram.com/ajeglon" class="button" target="_blank">Follow Me<img class="icon" src="../../Images/instagram.png"></a></li>
+                </div>
+              </div>
+            </nav>
+        </div>
+        </header>
+<!--Exhibiton Title + Date-->
+<div>
+    <h2 class="exhtitle" role="heading">Final Show - Foundation Diploma in Art and Design (May 2014)</h2>
+</div>
+<!--Exhibition Images-->
+<div>
+    <img class="exhposter" src="./Foundation Degree Poster.jpg" alt="Poster with celluar structure displaying information for exhibition" role="img" height="50%" width="50%">
+    <p class="exhgallery"><a href="../../Gallery/Foundation Degree/Foundation Degree.html"> Exhibition Gallery</a></p>
+</div>
+
+<!--About Exhibition--> 
+<div>
+    <p class="exhtext">This exhibition was the final product of my Foundation Degree at Newcastle College in which I displayed a series of wire sculptures. The sculptures I produced for this exhibition were a progression on a piece shown at the Open Studios, which was a wire sculpture face inspired Alberto Giacometti’s two-dimensional drawings. Following from a face I decided the next move would transitioning the full human form as this would help combine the inspiration of Giacometti’s two and three-dimensional works.</p>
+</div>
+<div>
+    <img class="exhposter" src="./Foundation Exhibition Photo.jpg" alt="Photo of the class of 2014 in fancy dress" role="img" height="50%" width="50%">
+</div>
+<!--Contact-->
+<div>
+    <h4 class="contact">Contact: anthonyeglon@hotmail.co.uk</h4>
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
